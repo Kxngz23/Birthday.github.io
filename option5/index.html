@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="dareButton" class="dare-button">CLICK ME IF YOU DARE</button>
+        <div id="birthdaySurprise" class="hidden">
+            <h1 class="birthday-text">HAPPY BIRTHDAY!</h1>
+            <div id="confetti-container"></div>
+            <div id="fireworks-container"></div>
+            <div id="floating-pictures"></div>
+            
+            <div class="birthday-card closed" id="birthdayCard">
+                <div class="card-front">
+                    <div class="card-title">HAPPY BIRTHDAY</div>
+                </div>
+                <div class="card-inside">
+                    <div class="message-left">
+                        <button id="playButton" class="play-button">▶</button>
+                    </div>
+                    <div class="message-right">
+                        <p>Friends make everything better. Happy birthday!</p>
+                        <p>I can't think of a better gift than your friendship. Happy birthday!</p>
+                        <p>Cheers to another trip around the sun!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="birthdayAudio" src="birthday-song.mp3"></audio>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
